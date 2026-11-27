@@ -1,0 +1,9 @@
+{
+  "name": "thm-tracker",
+  "version": "1.0.0",
+  "description": "A minimal progress tracker for the free TryHackMe rooms list",
+  "scripts": {
+    "update-rooms": "node scripts/update-rooms.js"
+  },
+  "license": "MIT"
+}

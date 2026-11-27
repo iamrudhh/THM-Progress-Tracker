@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TryHackMe Room Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>TryHackMe room tracker</h1>
+    <p class="sub">Progress is saved in this browser.</p>
+  </header>
+
+  <section class="summary" aria-label="Overall progress">
+    <div class="stat"><b id="sDone">0</b><span>Completed</span></div>
+    <div class="stat"><b id="sProg">0</b><span>In progress</span></div>
+    <div class="stat"><b id="sTodo">0</b><span>Not started</span></div>
+    <div class="stat"><b id="sPct">0%</b><span>Done overall</span></div>
+    <div class="bar" aria-hidden="true"><i id="barDone"></i><i id="barProg"></i></div>
+  </section>
+
+  <section class="controls">
+    <input id="search" type="search" placeholder="Search rooms" aria-label="Search rooms">
+    <select id="category" aria-label="Category"></select>
+    <div class="tabs" id="tabs" role="group" aria-label="Filter by status">
+      <button data-f="all" class="on">All</button>
+      <button data-f="todo">Not started</button>
+      <button data-f="prog">In progress</button>
+      <button data-f="done">Completed</button>
+    </div>
+  </section>
+
+  <div id="list"></div>
+  <p id="empty" class="empty" hidden>No rooms match your filters.</p>
+
+  <p class="credit">Room list by <a href="https://github.com/abimelsbk/free-tryhackme-rooms" target="_blank" rel="noopener noreferrer">Abimel S B Kulumala</a>. Not affiliated with TryHackMe.</p>
+
+  <footer>
+    <button id="export">Export backup</button>
+    <button id="import">Import backup</button>
+    <button id="reset" class="danger">Reset all</button>
+    <input id="file" type="file" accept="application/json" hidden>
+  </footer>
+</main>
+<script src="rooms.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
