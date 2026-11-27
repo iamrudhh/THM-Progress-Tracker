@@ -4,7 +4,7 @@ A minimal, no-login progress tracker for the free [TryHackMe](https://tryhackme.
 
 Plain HTML, CSS and JavaScript. No build step, no dependencies, no server.
 
-**Live demo:** https://iamrudhh.github.io/thm-tracker/
+**Live demo:** https://iamrudhh.github.io/THM-Progress-Tracker/
 
 ## Features
 
@@ -18,8 +18,8 @@ Plain HTML, CSS and JavaScript. No build step, no dependencies, no server.
 ## Quick start
 
 ```bash
-git clone https://github.com/iamrudhh/thm-tracker.git
-cd thm-tracker
+git clone https://github.com/iamrudhh/THM-Progress-Tracker.git
+cd THM-Progress-Tracker
 ```
 
 Then open `index.html` in your browser. That's it.
@@ -35,7 +35,7 @@ npx serve .
 **GitHub Pages**
 1. Fork this repo.
 2. Go to Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)` → Save.
-3. Your tracker is live at `https://<your-username>.github.io/thm-tracker/`.
+3. Your tracker is live at `https://<your-username>.github.io/THM-Progress-Tracker/`.
 
 Netlify Drop, Cloudflare Pages and Vercel also work: it's all static files.
 
